@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(245, 161, 26);
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    color: rgb(243, 243, 243);
+}
+
+.main {
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+a {
+    color: rgb(243, 243, 243);
+}
+
+.left-part {
+    width: 35%;
+}
+
+.nav  {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 15%;
+}
+
+.insta {
+    width: 30%;
+}
+
+.nav img  {
+    width: 30%;
+}
+
+.description {
+   border-left: 10px solid var(--main-color);
+   box-shadow: rgb(66, 66, 66) 3px 3px 6px 0px inset, rgba(29, 29, 29, 0.5) -3px -3px 6px 1px inset;
+   padding: 3%;
+} 
+
+.description p {
+    margin-bottom: 0px;
+    font-size: 130%;
+}
+
+.description h1 {
+    font-size: 300%;
+}
+
+.right-part {
+    width: 75%;
+}
+
+#carousel-img {
+    height: 90vh;
+    object-fit: contain;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left-part {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .description p {
+        font-size: 120%;
+    }
+
+    .right-part {
+        width: 90%;
+    }
+
+    #carousel-img {
+        height: auto;
+    }
+}
